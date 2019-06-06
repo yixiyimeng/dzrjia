@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/layer.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.ext.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+	</head>
+	<body class="bg">
+		<div class="view">
+			<a href="index.html" class="logo"><img src="img/logo.png"></a>
+			<img src="img/img1.png" class="banner">
+			<!-- 奖品 -->
+			<div class="prize">
+				<a href="javascript:;" class="prizebtn"></a>
+				<ul class="menu flex flex-pack-justify">
+					<li class="flex-1"><a href="">
+							<div><img src="img/img3.png"></div>
+							<p>平面方案三套</p>
+						</a></li>
+					<li class="flex-1"><a href="">
+							<div><img src="img/img4.png"></div>
+							<p>色彩搭配</p>
+						</a></li>
+					<li class="flex-1"><a href="">
+							<div> <img src="img/img5.png"></div>
+							<p>收纳规划</p>
+						</a></li>
+					<li class="flex-1"><a href="">
+							<div><img src="img/img6.png"></div>
+							<p>动线设计</p>
+						</a></li>
+					<li class="flex-1"><a href="">
+							<div><img src="img/img7.png"></div>
+							<p>立体图一套</p>
+						</a></li>
+				</ul>
+				<!-- form -->
+				<div class="input-group">
+					<form action="">
+						<div class="input-row flex flex-align-center">
+							<label>
+								<i class="icon icon1"></i>
+							</label>
+							<div class="flex-1">
+								<input type="text" />
+								<div class="tag">请输入您的房屋面积㎡<em>*</em></div>
+							</div>
+						</div>
+						<div class="input-row mt20 flex flex-align-center">
+							<label><i class="icon icon2"></i></label>
+							<div class="flex-1">
+								<input type="text" />
+								<div class="tag">输入姓名，抢免费设计㎡<em>*</em></div>
+							</div>
+
+						</div>
+						<div class="input-row mt20 flex flex-align-center">
+							<label><i class="icon icon3"></i></label>
+							<div class="flex-1">
+								<input type="text" />
+								<div class="tag">输入号码，享家装惊喜㎡<em>*</em></div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<!-- 领取按钮 -->
+				<a href="javascript:;" class="prizebtn-lg mt25">立即领取·免费设计名额</a>
+			</div>
+			<!-- tab -->
+			<img src="img/title.png" class="title-img">
+			<div class="tab">
+				<ul class="swiperTab">
+					<li>橡木生活</li>
+					<li>精英领地</li>
+					<li>小懒人</li>
+					<li>极致简约</li>
+				</ul>
+			
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="img/img1.jpg" ></div>
+						<div class="swiper-slide"><img src="img/img2.jpg" ></div>
+						<div class="swiper-slide"><img src="img/img3.jpg" ></div>
+						<div class="swiper-slide"><img src="img/img4.jpg" ></div>
+					</div>
+				</div>
+				<div class="tab-footer">
+					<a href="javascript:;"><img src="img/btn2.png" ></a>
+				</div>
+			</div>
+			<!-- 名师 -->
+			<img src="img/title2.png" class="title-img2" >
+		</div>
+	</body>
+</html>
+<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/swiperTab.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+ $(function () {
+      //swiperTab 是你导航的className,active是你当前状态的className
+        $('.swiperTab > li').eq(0).addClass('active');
+        tabs('.swiperTab > li','.swiper-container','active');
+		/* 表单 自定义占位符效果 */
+		$('.input-group .input-row input').focus(function(){
+			$(this).next('.tag').hide();
+		}).blur(function(){
+			if(!$(this).val()){
+				$(this).next('.tag').show();
+			}
+		})
+    });
+</script>
