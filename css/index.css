@@ -137,6 +137,22 @@ html {
 .input-group .input-row label .icon.icon5 {
 	background-image: url(../img/icon5.png);
 }
+.input-group .input-row label .icon.icon6 {
+	background-image: url(../img/icon6.png);
+}
+
+.input-group .input-row label .icon.icon7 {
+	background-image: url(../img/icon7.png);
+}
+
+.input-group .input-row label .icon.icon8 {
+	background-image: url(../img/icon8.png);
+}
+
+.input-group .input-row label .icon.icon9 {
+	background-image: url(../img/icon9.png);
+}
+
 
 .input-group .input-row>div {
 	position: relative;
@@ -297,13 +313,15 @@ html {
 	padding-top: .35rem;
 	/* padding-bottom: .4rem; */
 	padding-left: .15rem;
-height:2.12rem ;
+	height: 2.12rem;
 	margin-top: .08rem;
 	position: relative;
 }
-.design .design-bd li+li{
+
+.design .design-bd li+li {
 	margin-top: .15rem;
 }
+
 .design .design-bd li i {
 	display: inline-block;
 	width: .07rem;
@@ -316,7 +334,8 @@ height:2.12rem ;
 .design .design-bd li span {
 	vertical-align: middle;
 }
-.design .design-bd:before{
+
+.design .design-bd:before {
 	content: '';
 	border: 1px solid #fff;
 	display: block;
@@ -326,27 +345,60 @@ height:2.12rem ;
 	top: .15rem;
 	left: -.1rem;
 }
+
 .design img {
 	position: absolute;
 	right: -.07rem;
 	top: -.03rem;
 	width: 1.68rem;
 }
- .design +.input-group{
-	 background: #fff;
-	 margin: 0 .1rem .15rem;
-	 padding-top: .35rem;
-	 padding-bottom: .25rem;
- }
- .design +.input-group .btn{
-	 margin: .3rem auto 0;
-	 color: #fff;
-	 font-size: .3rem;
-	 text-align: center;
-	 width: 3.18rem;
-	 height: .67rem;
-	 background: #ff3e59;
-	 border-radius: .05rem;
-	 display: block;
-	 line-height: .67rem;
- }
+
+.design+.input-group {
+	background: #fff;
+	margin: 0 .1rem .15rem;
+	padding-top: .35rem;
+	padding-bottom: .25rem;
+}
+
+.design+.input-group .btn {
+	margin: .3rem auto 0;
+	color: #fff;
+	font-size: .3rem;
+	text-align: center;
+	width: 3.18rem;
+	height: .67rem;
+	background: #ff3e59;
+	border-radius: .05rem;
+	display: block;
+	line-height: .67rem;
+}
+
+.subview {
+	background: #fff;
+}
+
+.subview .banner {
+	width: 100%;
+	margin-bottom: .2rem
+}
+
+.subview .input-group .input-row {
+	background: #fff;
+}
+
+.subview .input-group .input-row label:after {
+	background:none;
+}
+.subview .input-group .btn{
+	margin: .3rem auto 0;
+	width: 6.64rem;
+	display: block;
+}
+.subview .input-group .btn img{
+	width: 100%;display: block;
+}
+.subview .service{
+	margin: .4rem auto 0;
+	display: block;
+	width:7.22rem ;
+}
