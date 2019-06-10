@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/reset.css" />
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
 	</head>
@@ -32,42 +33,49 @@
 					<div class="input-row mt30 flex flex-align-center">
 						<label><i class="icon icon8"></i></label>
 						<div class="flex-1">
-							<input type="text" placeholder="请输入您的手机号·便于查收报价"/>
-							</div>
+							<input type="text" placeholder="请输入您的手机号·便于查收报价" />
+						</div>
 
 					</div>
 					<a href="javascript:;" class="btn"><img src="img/btn3.png"></a>
 				</form>
 			</div>
 			<img src="img/img7.jpg" class="service">
-				<!-- 优惠 -->
+			<!-- 优惠 -->
 			<div class="preferential">
-				<img src="img/title5.png" class="title5" >
-				<div class="card"><img src="img/card.png" ></div>
+				<img src="img/title5.png" class="title5">
+
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide "><img src="img/card.png" class="card"></div>
+						<div class="swiper-slide "><img src="img/card2.png" class="card"></div>
+						<div class="swiper-slide "><img src="img/card3.png" class="card"></div>
+					</div>
+				</div>
 				<p>具体活动细则见各门店</p>
 				<img src="img/img10.png" class="menulist">
 			</div>
 			<!-- 免费获取申请材料 -->
 			<div class="apply">
-				<div><img src="img/img12.png" >
-				<a href="javascript:;">免费获取材料清单</a></div>
+				<div><img src="img/img12.png">
+					<a href="javascript:;">免费获取材料清单</a></div>
 			</div>
-			<img src="img/title4.png" class="title4" >
+			<img src="img/title4.png" class="title4">
 			<div class="about">
 				<div class="about-item">
 					<div><img src="img/tag.png" class="tag">大自然环保整装</div>
 					<p>大自然家居（股票代码：02083）旗下整体家装领航品牌</p>
-					<img src="img/img8.jpg" >
+					<img src="img/img8.jpg">
 				</div>
-					<div class="about-item">
+				<div class="about-item">
 					<div><img src="img/tag2.png" class="tag">自有木作基地</div>
 					<p>真源头把控环保、拥有八大原材料林地</p>
-					<img src="img/img9.jpg" >
+					<img src="img/img9.jpg">
 				</div>
 			</div>
-			<img src="img/img11.png"  class="img11">
-			<img src="img/title3.png" class="title3" >
-		
+			<img src="img/img11.png" class="img11">
+			<img src="img/title3.png" class="title3">
+
 			<div class="input-group mt15">
 				<form action="">
 					<div class="input-row flex flex-align-center">
@@ -81,8 +89,8 @@
 					<div class="input-row mt30 flex flex-align-center">
 						<label><i class="icon icon9"></i></label>
 						<div class="flex-1">
-							<input type="text" placeholder="请选择到店日期"/>
-							
+							<input type="text" placeholder="请选择到店日期" />
+
 						</div>
 
 					</div>
@@ -90,7 +98,7 @@
 						<label><i class="icon icon8"></i></label>
 						<div class="flex-1">
 							<input type="text" placeholder="请输入您的手机号" />
-						
+
 						</div>
 
 					</div>
@@ -100,26 +108,38 @@
 		</div>
 		<!-- success -->
 		<div class="win succsee">
-			<img src="img/success.png" >
+			<img src="img/success.png">
 			<a href="javascript:;" class="btn"></a>
 			<a href="javascript:;" class="close"></a>
 		</div>
 		<!-- error -->
 		<div class="win error">
-			<img src="img/error.png" >
+			<img src="img/error.png">
 			<a href="javascript:;" class="btn"></a>
 			<a href="javascript:;" class="close"></a>
 		</div>
 	</body>
 </html>
 <script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
- $(function () {
-    
-	$('.win .close').click(function(){
-		$(this).closest('.win').hide();
-	});
-	$('.win .btn').click(function(){
-		$(this).closest('.win').hide();
+	$(function() {
+
+		$('.win .close').click(function() {
+			$(this).closest('.win').hide();
+		});
+		$('.win .btn').click(function() {
+			$(this).closest('.win').hide();
+		});
+		new Swiper('.swiper-container', {
+			speed: 500, //滑动速度，单位ms
+			autoHeight: true, // 高度随内容变化
+			loop: true,
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+			}
+
+		});
 	})
 </script>

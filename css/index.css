@@ -492,6 +492,7 @@ html {
 		.subview  .card{
 			width: 7.12rem;
 			margin: .2rem .15rem 0;
+			display: block;
 		}.subview .preferential p{
 			text-align: right;
 			color: #fff;
