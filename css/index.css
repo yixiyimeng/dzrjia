@@ -448,6 +448,89 @@ html {
 		display: block;
 		margin: .45rem auto 0;
 	}
-	.subview .title4{
+	.subview .title4,.subview  .card img{
+		width: 100%;
+		display: block;
+	}
+	.subview .preferential{
+		margin-top: .42rem;
+		background: #ff984c;
+		padding: .55rem 0 .6rem;
+	}
+		.subview .title5{
+		width:5.15rem;
+		display: block;
+		margin: 0 auto;
+	}
+		.subview  .card{
+			width: 7.12rem;
+			margin: .2rem .15rem 0;
+		}.subview .preferential p{
+			text-align: right;
+			color: #fff;
+			font-size: .15rem;padding-right: .3rem;
+			
+		}
+		.subview .preferential>.menulist{
+			display: block;
+			width: 6.53rem;
+			margin: .3rem auto 0;
+		}
+			.subview .about{
+				margin: .2rem .45rem 0;
+				color: #ff984c;
+				font-size: .26rem;
+			}
+			.subview .about .about-item>div{
+				position: relative;
+				padding-left: 1.1rem;
+			}
+		.subview .about .about-item .tag{
+			width: .9rem;
+			position: absolute;
+			left: 0;
+		}
+		.subview .about .about-item p{
+			color: #121212;font-size: .25rem;
+			padding-left: .15rem;
+			margin-bottom: .1rem;
+		}
+		.subview .about .about-item>img{
+			width: 100%;
+		}
+			.subview .about .about-item+.about-item{
+				margin-top: .25rem;
+			}
+	.win{
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 9999;
+		display: none;
+	}
+	.win img{
+		display: block;
 		width: 100%;
 	}
+	.win .btn{
+		background: none;
+		display: block;
+		position: absolute;
+		height: .8rem;
+		width: 3.95rem;
+		top: 7.62rem;
+		left: 50%;
+		transform: translateX(-50%);
+		}
+		 
+.win .close{
+	display: block;
+	position: absolute;
+	height: .42rem;
+	width:.42rem;
+	top: 9.12rem;
+	left: 50%;
+	transform: translateX(-50%);
+}

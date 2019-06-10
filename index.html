@@ -136,6 +136,18 @@
 				</form>
 			</div>
 		</div>
+		<!-- success -->
+		<div class="win succsee">
+			<img src="img/success.png" >
+			<a href="javascript:;" class="btn"></a>
+			<a href="javascript:;" class="close"></a>
+		</div>
+		<!-- error -->
+		<div class="win error">
+			<img src="img/error.png" >
+			<a href="javascript:;" class="btn"></a>
+			<a href="javascript:;" class="close"></a>
+		</div>
 	</body>
 </html>
 <script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
@@ -154,4 +166,10 @@
 			}
 		})
     });
+	$('.win .close').click(function(){
+		$(this).closest('.win').hide();
+	});
+	$('.win .btn').click(function(){
+		$(this).closest('.win').hide();
+	})
 </script>
